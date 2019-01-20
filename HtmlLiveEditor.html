@@ -1,0 +1,97 @@
+<!--<div class='ribbon-title'><h1 class='post-title ribbon entry-title' itemprop='name headline'><strong class='ribbon-content'>
+HTML Live EDITOR
+</strong></h1></div>
+<div class='post-header'>
+<div class='post-header-line-1'>
+</div>
+</div>
+<div class='post-body entry-content' id='post-body-6869131209324418836'>
+<div class='artbody' itemprop='description articleBody'>
+-->
+<!--DOCTYPE html-->
+<html manifest="cloudedit.appcache">
+<!--<html>-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+  <title>HTML Live Editor</title>
+  <link href="hhttps://cdn.staticaly.com/gh/Nendenpio/css/83db0795/cloudEdit.min.css" rel="stylesheet">
+  <link href="https://cdn.staticaly.com/gh/Nendenpio/css/3cbc1621/contexMenu.min.css" rel="stylesheet">
+  <link href="https://cdn.staticaly.com/gh/Nendenpio/css/b5a5a7c3/font-awesome.min.css" rel="stylesheet">
+  
+  <!--<link href="https://cdn.staticaly.com/gh/Nendenpio/HTML-Live-Editor/8a5af8a0/cloudEdiX.min.css" rel="stylesheet">
+  <link href="https://cdn.staticaly.com/gh/Nendenpio/HTML-Live-Editor/860deb9f/contextMnu.min.css" rel="stylesheet">
+  <link href="hhttps://cdn.staticaly.com/gh/Nendenpio/css/b5a5a7c3/font-awesome.min.css" rel="stylesheet">
+ -->
+  <meta name="description" content="Test your JavaScript, CSS, HTML or CoffeeScript online with Shannenpio Cloning: HTML Live Editor." />
+  <meta name="keywords" content="online javascript editor, testing javascript online, online code playground, online code editor, html, css, javascript" />
+   
+</head>
+<body>
+  <section>
+    <div class="row btnGroup">
+      <div class="column-33 toggleGroup">
+        <button class="btn togglePane" id="htmlToggle" data-editor="html" title="Toggle HTML">HTML</button>
+        <button class="btn togglePane" id="cssToggle" data-editor="css" title="Toggle CSS">CSS</button>
+        <button class="btn togglePane" id="jsToggle" data-editor="js" title="Toggle JS">JavaScript</button>
+        <button class="btn btn-active" id="consoleToggle" title="Toggle JavaScript Console">Console</button>
+        <button class="btn" id="liveEdit" title="Toggle Live Edit Mode">LiveEdit</button>
+      </div><!--
+      --><div class="column-33">
+        <h1> HTML Live Editor</h1>
+      </div><!--
+      --><div class="column-33 btnGroup last">
+        <button class="btn" id="previewToggle" title="Enlarge Preview">Preview</button>
+        <button class="btn" id="clear" title="Click to clear all panes">Clear</button>
+        <button class="btn" id="download" title="Download to computer">Download</button>
+        <button class="btn" id="save" title="Save to localStorage">Save</button>
+        <button class="btn" id="load" title="Load from localStorage">Load</button>
+        <button class="btn" id="run" title="Run...">Run</button>
+      </div>
+    </div>
+    <div class="editor-box">
+    <div class="row windowGroup">
+      <div class="column-33">
+        <div class="window html">
+          <pre id="html"></pre>
+          <span class="windowLabel" id="htmlLabel">HTML</span>
+        </div>
+      </div><!--
+      --><div class="column-33">
+        <div class="window css">
+          <pre id="css"></pre>
+          <span class="windowLabel" id="cssLabel">CSS</span>
+        </div>
+      </div><!--
+      --><div class="column-33">
+        <div class="window js">
+          <pre id="js"></pre>
+          <span class="windowLabel" id="jsLabel">JavaScript/jQuery 1.x</span>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row console" style="display:none">
+      <pre id="console"></pre>
+      <span class="windowLabel" id="consoleLabel">Console</span>
+    </div>
+    <div class="row preview">
+      <iframe id="iframe" name="CloudEdit"
+        sandbox="allow-scripts allow-pointer-lock allow-same-origin allow-popups allow-forms"
+        allowtransparency="true">
+      </iframe>
+      <span class="windowLabel" id="iframeLabel">Preview</span>
+      <span id="iframeClose">&times;</span>
+    </div>
+    <footer style='font-size:70%;margin:20px 20px 0;color:#777'>Copyright &#169; <script>document.write((new Date()).getFullYear());</script> <b>HTML Live Editor</b> | Created by: <a style="text-decoration:none;color:#777" href='https://github.com/Nendenpio' target='_blank' title='ShannenPio'><b>ShannenPio</b></a> | Developed by: <a style="text-decoration:none;color:#777" title='Shannen Pio' href='https://www.blogsgoblog.com' target='_blank'><b>Shannen Pio</b></a></footer>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://cdn.staticaly.com/gh/Nendenpio/HTML-Live-Editor/e28b8fbe/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://cdn.staticaly.com/gh/Nendenpio/HTML-Live-Editor/e95498c1/ext-emmet.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://cdn.staticaly.com/gh/Nendenpio/HTML-Live-Editor/60a98feb/emmet.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://cdn.staticaly.com/gh/Nendenpio/HTML-Live-Editor/2582c0e2/jquery.ui.position.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://cdn.staticaly.com/gh/Nendenpio/HTML-Live-Editor/f786c1a7/contextMenu.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://cdn.staticaly.com/gh/Nendenpio/HTML-Live-Editor/f786c1a7/jquery.ui.position.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://cdn.staticaly.com/gh/Nendenpio/HTML-Live-Editor/224957df/cloudEdit.min.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
